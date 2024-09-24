@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true, // (opcional) para evitar problemas con archivos de definición de terceros
+    "jsx": "react-jsx" // Asegúrate de tener esta configuración también
+  }
+}

@@ -1,0 +1,25 @@
+/* Footer.css */
+.footer {
+    background-color: #282c34; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+}
+
+.banner {
+    margin: 0 auto; /* Centrar el banner */
+    max-width: 800px; /* Ancho máximo del banner */
+}
+
+.btn {
+    background-color: #61dafb; /* Color del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    color: black; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.btn:hover {
+    background-color: #4db8e1; /* Color al pasar el cursor */
+}
