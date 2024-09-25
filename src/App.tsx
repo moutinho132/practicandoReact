@@ -5,6 +5,7 @@ import Contador from './components/Contador'
 import Texto from './components/Texto'
 import Lista from './components/Lista'
 import Footer from './components/Footer'
+import CardBody from './components/CardBody';
 function App() {
   return (
     <>
@@ -19,20 +20,39 @@ function App() {
       </div>
       
       <div>
-        <Saludo />  {/* Usar el componente Saludo */}
+      <Saludo />  {/* Usar el componente Saludo */}
       </div>
 
       <div>
-        <Contador/>
+      <Contador/>
       </div>
 
       <div>
-        <Texto/>
+      <Texto/>
       </div>
 
       <div><Lista></Lista></div>
+      <CardBody experiences={[
+        {
+        company: "Dummy Company",
+        title: "Dummy Title",
+        duration: "Dummy Duration",
+        description: "This is a dummy description of the experience."
+        },
+        {
+        company: "Another Dummy Company",
+        title: "Another Dummy Title",
+        duration: "Another Dummy Duration",
+        description: "This is another dummy description of the experience."
+        }
+      ]} experience={undefined} />
 
-      <Footer />
+      <Footer 
+      title="Footer Title" 
+      message="This is a footer message" 
+      buttonText="Click Me" 
+      onButtonClick={() => alert('Button clicked!')} 
+      />
 
     </>
   )

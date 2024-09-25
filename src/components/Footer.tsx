@@ -1,14 +1,21 @@
 // Footer.tsx
 import React from 'react';
-import './Footer.css'; // Asegúrate de crear un archivo CSS si deseas estilos personalizados
+import './Footer.css';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+    title: string;
+    message: string;
+    buttonText: string;
+    onButtonClick: () => void;
+}
+
+const Footer = ({ title, message, buttonText, onButtonClick }: FooterProps) => {
     return (
         <footer className="footer">
             <div className="banner">
-                <h2>¡Bienvenido a nuestro sitio!</h2>
-                <p>Explora nuestras ofertas y promociones especiales.</p>
-                <button className="btn">¡Descubre más!</button>
+                <h2>{title}</h2>
+                <p>{message}</p>
+                <button className="btn" onClick={onButtonClick}>{buttonText}</button>
             </div>
         </footer>
     );
