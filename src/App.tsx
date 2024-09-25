@@ -6,6 +6,7 @@ import Texto from './components/Texto'
 import Lista from './components/Lista'
 import Footer from './components/Footer'
 import CardBody from './components/CardBody';
+import CardParrafo from './components/CardParrafo';
 function App() {
   return (
     <>
@@ -46,6 +47,8 @@ function App() {
         description: "This is another dummy description of the experience."
         }
       ]} experience={undefined} />
+
+      <CardParrafo title="Sample Title" description="Sample Description"/>
 
       <Footer 
       title="Footer Title" 
